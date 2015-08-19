@@ -1,0 +1,58 @@
+/*
+Theme Name: Fabulous RTL CSS
+See http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+/*wraps & grid*/
+.left-content { float: right; }
+.sidebar-container { float: left; }
+.col { float: right; margin: 0 1.6% 2% 0; direction: rtl; }
+.col-1 { margin-left: 0; margin-right: 0; }
+
+/*breadcrumbs*/
+.breadcrumb-trail .fa-home { margin-left: 10px; margin-right: 0; }
+
+/*navigation*/
+.sf-menu ul ul { right: 100%; left: auto; }
+a.navigation-toggle .fa { margin-right: 0; margin-left: 10px; }
+
+.wpex-mobile-nav-ul .wpex-mobile-dropdown-icon { right: auto; left: 0; text-align: left; }
+.wpex-mobile-nav-ul .menu-item-has-children > a { padding-right: 0; padding-left: 80px; }
+.wpex-mobile-nav-ul .menu-item-has-children ul a { padding-right: 20px; }
+.wpex-mobile-nav-ul .menu-item-has-children ul ul a { padding-right: 40px; }
+.wpex-mobile-nav-ul .menu-item-has-children ul ul ul a { padding-right: 60px; }
+.wpex-mobile-nav-ul .menu-item-has-children ul ul ul a { padding-right: 80px; }
+.wpex-mobile-nav-ul .menu-item-has-children ul a:before { float: right; margin-left: 10px; content: "\f0d9"; }
+
+/*pagination*/
+ul.page-numbers,
+ul.page-numbers li { float: right; }
+.page-links,
+.page-links span { float: right; }
+.comment-navigation .nav-next { text-align: left; }
+
+/*widgets*/
+.widget_wpex_social_widget li { float: right; }
+.wpex-widget-recent-posts-li { padding-left: 0; padding-right: 85px; }
+.wpex-widget-recent-posts-thumbnail { left: auto; right: 0; }
+.sidebar-widget.widget_archive li:before,
+.sidebar-widget.widget_recent_entries li:before,
+.sidebar-widget.widget_categories li:before,
+.sidebar-widget #recentcomments li:before { left: auto; right: 0; content: "\f0d9"; }
+.sidebar-widget.widget_archive li,
+.sidebar-widget.widget_recent_entries li,
+.sidebar-widget.widget_categories li { padding-left: 0; padding-right: 15px; }
+.sidebar-widget #recentcomments li { padding-right: 25px; }
+
+/*comments*/
+.comments-title .fa { margin-right: 0; margin-left: 15px; }
+.comment-details { margin-left: 0; margin-right: 120px; }
+.commentlist .comment { padding-right: 0; padding-left: 40px; }
+.comment-author { left: auto; right: 40px; }
+.comment-reply-link a { float: right; }
+.comment-permalink { right: auto; left: 40px; }
+#cancel-comment-reply-link { float: left; }
+#cancel-comment-reply-link .fa { margin-right: 0; margin-left: 7px; }
+
+/*other*/
+.site-scroll-top { right: auto; left: 30px; }
