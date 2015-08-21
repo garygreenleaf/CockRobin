@@ -7,8 +7,18 @@
  */
 ( function( $ ) {
 	"use strict";
-	
+
 	$(document).ready( function() {
+
+		// map scroll
+
+		$('.google-maps').click(function () {
+    	$('.google-maps iframe').css("pointer-events", "auto");
+		});
+
+		$( ".google-maps" ).mouseleave(function() {
+		  $('.google-maps iframe').css("pointer-events", "none");
+		});
 
 		// Vars
 		var $window = $( window );
@@ -102,7 +112,7 @@
 			} else {
 				$scrollTopLink.fadeOut();
 			}
-		} );		
+		} );
 		$scrollTopLink.on( 'click', function() {
 			$( 'html, body' ).animate( {scrollTop:0}, 400);
 			return false;
@@ -192,7 +202,7 @@
 			selector	: '.entry iframe',
 			players		: ['www.youtube.com', 'player.vimeo.com']
 		} );
-		
+
 	} ); // End doc ready
-	
+
 } )( jQuery );

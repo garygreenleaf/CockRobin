@@ -385,7 +385,7 @@
   padding: 30px;
   font-size: 1.385em;
   line-height: 1.6em;
-  font-family: 'Nunito', Helvetica, Arial;
+  font-family: 'Roboto Slab', Helvetica, Arial;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -486,7 +486,7 @@
   font-weight: bold;
   color: #000;
   line-height: 1.4em;
-  font-family: 'Nunito', Helvetica, Arial;
+  font-family: 'Roboto Slab', Helvetica, Arial;
   font-size: 1.385em;
 }
 
@@ -1040,7 +1040,7 @@ body .site-scroll-top:hover {
 ================================================== */
 /* line 234, ../sass/partials/_commons.scss */
 .entry ul {
-  margin: 30px 0 30px 20px;
+  margin: 20px 0 30px 20px;
 }
 
 /* line 238, ../sass/partials/_commons.scss */
@@ -1731,7 +1731,7 @@ body {
   background-color: #f7f7f7;
   background-image: url("../images//noise.png");
   background-repeat: repeat;
-  color: #777;
+  color: #000;
   font: 13px/21px 'Source Sans Pro', "Helvetica", Arial, serif;
 }
 
@@ -1874,7 +1874,7 @@ h6 {
 .entry h4,
 .entry h5,
 .entry h6 {
-  margin: 25px 0 25px;
+  margin: 35px 0 15px;
 }
 
 /* line 639, ../sass/partials/_core.scss */
@@ -2515,7 +2515,7 @@ a.view-all {
 
 /* line 26, ../sass/partials/_header.scss */
 .site-text-logo {
-  font-family: 'Nunito', Helvetica, Arial;
+  font-family: 'Roboto Slab', Helvetica, Arial;
 }
 
 /* line 30, ../sass/partials/_header.scss */
@@ -2536,10 +2536,11 @@ a.view-all {
 /* line 43, ../sass/partials/_header.scss */
 .blog-description {
   margin-top: 5px;
-  font-family: 'Nunito', Helvetica, Arial;
-  font-size: 0.846em;
+  font-family: 'Roboto Slab', Helvetica, Arial;
+  font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-left:27px;
 }
 
 /*header dark skin*/
@@ -2562,7 +2563,7 @@ a.view-all {
 
 /* line 66, ../sass/partials/_header.scss */
 .light-skin .blog-description {
-  color: #999;
+  color: #000;
 }
 
 /*breadcrumbs*/
@@ -3340,7 +3341,7 @@ button.mfp-close {
 /* line 143, ../sass/partials/_main-navigation.scss */
 #site-navigation .dropdown-menu ul a {
   display: block;
-  width: 125px;
+  width: auto;
   height: auto;
   line-height: 1.7em;
   padding: 12px 22px;
@@ -4043,7 +4044,7 @@ body.no-sidebar .entry-footer {
   padding: 40px;
   font-size: 1.385em;
   line-height: 1.6em;
-  font-family: 'Nunito', Helvetica, Arial;
+  font-family: 'Roboto Slab', Helvetica, Arial;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -5032,7 +5033,7 @@ body.dark-skin #footer-wrap .widget_wpex_social_widget a {
 
 .noscript {
     color: #000;
-    font-family: "Nunito",Helvetica,Arial;
+    font-family: "Roboto Slab",Helvetica,Arial;
     font-weight: 500;
     line-height: 1.4em;
 	font-size: 1.5em;
@@ -5049,6 +5050,7 @@ body.dark-skin #footer-wrap .widget_wpex_social_widget a {
     padding-bottom: 48%; // This is the aspect ratio
     height: 0;
     overflow: hidden;
+    margin-top:30px;
 }
 .google-maps iframe {
     position: absolute;
@@ -5056,6 +5058,7 @@ body.dark-skin #footer-wrap .widget_wpex_social_widget a {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+    pointer-events: none;
 }
 
 .wpcf7 {
@@ -5072,7 +5075,8 @@ body.dark-skin #footer-wrap .widget_wpex_social_widget a {
 }
 
 .spotlights {
-  margin-top:30px;
+  margin-top:50px;
+  overflow: hidden;
 }
 
 .spotlight-widget {
@@ -5089,10 +5093,19 @@ body.dark-skin #footer-wrap .widget_wpex_social_widget a {
   margin-left:0px;
 }
 
+.textwidget img{
+  margin:10px 0;
+}
+
+.button-bt a {
+  color: #FFF;
+  font-size: 1.2em;
+}
+
 @media only screen and (max-width: 767px) {
   /* line 32, ../sass/partials/_search.scss */
   .spotlight-widget {
     width: 100%;
-    margin:0 0 2%;
+    margin:0 0 10%;
   }
 }
