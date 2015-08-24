@@ -2513,6 +2513,21 @@ a.view-all {
   display: inline-block;
 }
 
+.fb_logo {
+  float: right;
+  width: 150px;
+  margin-top:90px;
+}
+
+@media only screen and (max-width: 767px) {
+  .fb_logo {
+    float: none;
+    margin-top: 0px;
+    margin: 20px auto -25px;
+    width: 120px;
+  }
+}
+
 /* line 26, ../sass/partials/_header.scss */
 .site-text-logo {
   font-family: 'Roboto Slab', Helvetica, Arial;

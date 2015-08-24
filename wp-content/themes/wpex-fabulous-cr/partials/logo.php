@@ -16,7 +16,10 @@
 $logo_img			= get_template_directory_uri(). '/images/logo.png';
 $blog_name			= get_bloginfo( 'name' );
 $blog_description	= get_bloginfo( 'description' );
-$home_url			= home_url(); ?>
+$home_url			= home_url();
+$fb_logo      = get_template_directory_uri(). '/images/findus.png';
+
+?>
 
 <div id="logo" class="span_1_of_2 col col-1">
 	<?php if ( $logo_img ) { ?>
@@ -43,3 +46,6 @@ $home_url			= home_url(); ?>
     </form>
 </div>
 -->
+<div class="span_1_of_2 col col-2">
+  <a href="http://www.facebook.com/cockrobinanglais" target="_blank"><img class="fb_logo" src="<?php echo $fb_logo;?>"></a>
+</div>
